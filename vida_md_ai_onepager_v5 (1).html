@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Managing Director, AI Strategy & Impact — VIDA Collaborative</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--vp:#603C96;--vpd:#311052;--vc:#F15D5E;--vxl:#FFF0EF;--vpl:#EDE8F7;--va:#FBB042;--val:#FFF8EC;--border:#E2DDF0;--text:#1A1523;--text2:#6B6481;--text3:#A09BB8}
+body{font-family:'DM Sans',sans-serif;background:#fff;color:var(--text);line-height:1.6;margin:0}
+.page{max-width:780px;margin:0 auto;padding:0 0 64px}
+.header{background:var(--vp);padding:36px 40px 32px;position:relative;overflow:hidden}
+.hs1{position:absolute;width:180px;height:180px;border-radius:50%;background:#9F447C;opacity:.25;top:-50px;right:20px;pointer-events:none}
+.hs2{position:absolute;width:110px;height:110px;border-radius:50%;background:#F15D5E;opacity:.2;top:20px;right:80px;pointer-events:none}
+.h-eye{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:10px;position:relative}
+.h-title{font-size:26px;font-weight:600;color:#fff;line-height:1.25;margin-bottom:6px;position:relative}
+.h-title em{color:#F9B3A8;font-style:normal}
+.h-sub{font-size:14px;color:rgba(255,255,255,.75);max-width:520px;line-height:1.6;position:relative}
+.h-meta{display:flex;align-items:center;gap:12px;margin-top:20px;position:relative;flex-wrap:wrap}
+.h-chip{font-size:12px;font-weight:500;padding:5px 12px;border-radius:20px;background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.25)}
+.sec{padding:36px 40px;border-bottom:1px solid var(--border)}
+.sec:last-child{border-bottom:none}
+.sec-num{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--vc);margin-bottom:6px}
+.sec-title{font-size:20px;font-weight:600;color:var(--vpd);margin-bottom:6px;line-height:1.3}
+.sec-lead{font-size:14px;color:var(--text2);line-height:1.65;margin-bottom:24px;max-width:620px}
+.role-grid{display:grid;grid-template-columns:1fr 40px 1fr;align-items:start}
+.rc{border:1.5px solid var(--border);border-radius:12px;overflow:hidden}
+.rc-head{padding:14px 16px;display:flex;align-items:flex-start;gap:10px}
+.rc-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.rc-body{padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.ri{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--text);line-height:1.45}
+.rdot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:5px}
+.vs-col{display:flex;align-items:center;justify-content:center;padding-top:20px}
+.vs{width:36px;height:36px;border-radius:50%;background:#EDE8F7;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:var(--vp)}
+.together{border:1.5px solid var(--border);border-radius:10px;padding:14px 16px;margin-top:16px}
+.together-lbl{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--text3);margin-bottom:8px}
+.ti-row{display:flex;align-items:flex-start;gap:7px;font-size:13px;color:var(--text);line-height:1.45;margin-bottom:6px}
+.ti-row:last-child{margin-bottom:0}
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sc{border:1.5px solid var(--border);border-radius:10px;padding:14px 16px;background:#fff}
+.sc-head{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.sc-icon{width:30px;height:30px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.sc-lbl{font-size:13px;font-weight:600;color:var(--vpd)}
+.si{display:flex;align-items:flex-start;gap:7px;font-size:12px;color:var(--text2);line-height:1.45;margin-bottom:5px}
+.si:last-child{margin-bottom:0}
+.snote{font-size:11px;color:var(--vp);font-weight:500;background:#EDE8F7;border-radius:6px;padding:6px 10px;margin-top:10px}
+.steps{display:flex;flex-direction:column}
+.sr{display:grid;grid-template-columns:32px 1fr;gap:0 16px;position:relative}
+.sr:not(:last-child) .sline{position:absolute;left:15px;top:32px;bottom:-8px;width:1.5px;background:var(--border)}
+.snum{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;flex-shrink:0;z-index:1}
+.sb{padding:4px 0 28px}
+.st{font-size:15px;font-weight:600;color:var(--vpd);margin-bottom:4px;line-height:1.3}
+.sd{font-size:13px;color:var(--text2);line-height:1.55;margin-bottom:10px}
+.scards{display:flex;flex-direction:column;gap:7px}
+.scard{border:1.5px solid var(--border);border-radius:9px;padding:12px 14px;background:#fff}
+.scard.opt{border-style:dashed;border-color:#FBB042;background:#FFFDF7}
+.scard-t{font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px}
+.scard-b{font-size:12px;color:var(--text2);line-height:1.5}
+.gtag{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;padding:3px 9px;border-radius:20px;margin-bottom:7px}
+.g-data{background:#EAF3DE;color:#27500A}
+.g-int{background:#EDE8F7;color:#311052}
+.g-ext{background:#FFF0EF;color:#7A1A1A}
+.opt-tag{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;padding:3px 9px;border-radius:20px;background:#FFF8EC;color:#6B4200;margin-bottom:7px}
+.plink{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:500;color:var(--vp);background:#EDE8F7;border:1.5px solid var(--border);border-radius:7px;padding:5px 11px;margin-top:8px;text-decoration:none}
+.plink:hover{background:var(--vp);color:#fff;border-color:var(--vp)}
+.bul{display:flex;flex-direction:column;gap:5px;margin-top:4px}
+.bitem{display:flex;align-items:flex-start;gap:7px;font-size:12px;color:var(--text2);line-height:1.4}
+.bdot{width:5px;height:5px;border-radius:50%;background:var(--vc);flex-shrink:0;margin-top:5px}
+.footer{background:var(--vpd);padding:28px 40px;display:flex;align-items:center;justify-content:space-between}
+.fl{font-size:14px;font-weight:500;color:#fff}
+.fl-sub{font-size:12px;color:rgba(255,255,255,.55);margin-top:2px}
+.fv{width:36px;height:36px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;color:var(--vp)}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="header">
+  <div class="hs1"></div><div class="hs2"></div>
+  <div class="h-eye">Strategic proposal — VIDA Collaborative</div>
+  <div class="h-title">Managing Director, <em>AI Strategy &amp; Impact</em></div>
+  <div class="h-sub">A proposal to formalize VIDA's AI practice under dedicated leadership — covering role structure, scope, and a concrete path to operationalizing the shift.</div>
+  <div class="h-meta">
+    <span class="h-chip">Dominique Charlie Oquendo</span>
+    <span class="h-chip">2026</span>
+    <span class="h-chip">For leadership review</span>
+  </div>
+</div>
+
+<!-- SECTION 1 -->
+<div class="sec">
+  <div class="sec-num">Section 1</div>
+  <div class="sec-title">Two roles, one AI practice</div>
+  <div class="sec-lead">VIDA already has foundational AI infrastructure in place through the Operations role. This proposal builds on that foundation — not over it. The two roles are designed to be complementary, not redundant.</div>
+  <div class="role-grid">
+    <div class="rc">
+      <div class="rc-head" style="background:#F9F7FD">
+        <div class="rc-icon" style="background:#EDE8F7;color:#603C96">&#9881;</div>
+        <div><div style="font-size:13px;font-weight:600;color:#311052">Operations role</div><div style="font-size:11px;color:#6B6481;margin-top:2px">AI operations (current)</div></div>
+      </div>
+      <div class="rc-body" style="background:#FDFCFF">
+        <div class="ri"><div class="rdot" style="background:#603C96"></div>Manages AI tool subscriptions and vendor relationships</div>
+        <div class="ri"><div class="rdot" style="background:#603C96"></div>Maintains internal AI governance documentation and policies</div>
+        <div class="ri"><div class="rdot" style="background:#603C96"></div>Oversees compliance with internal AI standards</div>
+        <div class="ri"><div class="rdot" style="background:#603C96"></div>Handles tool approval and access administration</div>
+        <div class="ri"><div class="rdot" style="background:#603C96"></div>Supports operational continuity of AI infrastructure</div>
+      </div>
+    </div>
+    <div class="vs-col"><div class="vs">+</div></div>
+    <div class="rc">
+      <div class="rc-head" style="background:#FFF5F5">
+        <div class="rc-icon" style="background:#FFF0EF;color:#F15D5E">&#9650;</div>
+        <div><div style="font-size:13px;font-weight:600;color:#7A1A1A">MD, AI Strategy &amp; Impact</div><div style="font-size:11px;color:#B05050;margin-top:2px">Proposed</div></div>
+      </div>
+      <div class="rc-body" style="background:#FFFAFA">
+        <div class="ri"><div class="rdot" style="background:#F15D5E"></div>Sets VIDA's AI strategic direction internally and externally</div>
+        <div class="ri"><div class="rdot" style="background:#F15D5E"></div>Builds and maintains the internal AI tool library and hub</div>
+        <div class="ri"><div class="rdot" style="background:#F15D5E"></div>Leads AI integration on client engagements and proposals</div>
+        <div class="ri"><div class="rdot" style="background:#F15D5E"></div>Owns the external AI pipeline — partnerships, RFPs, thought leadership</div>
+        <div class="ri"><div class="rdot" style="background:#F15D5E"></div>Builds staff AI fluency and capacity across the team</div>
+      </div>
+    </div>
+  </div>
+  <div class="together">
+    <div class="together-lbl">How the two roles work together</div>
+    <div class="ti-row"><span style="color:#603C96;font-weight:600;flex-shrink:0">&#8594;</span>&nbsp;Operations sets the guardrails. AI Strategy &amp; Impact builds within them.</div>
+    <div class="ti-row"><span style="color:#603C96;font-weight:600;flex-shrink:0">&#8594;</span>&nbsp;New tools proposed by AI Strategy go through Operations for approval and documentation.</div>
+    <div class="ti-row"><span style="color:#603C96;font-weight:600;flex-shrink:0">&#8594;</span>&nbsp;AI Strategy flags governance gaps; Operations updates policy to address them.</div>
+    <div class="ti-row"><span style="color:#603C96;font-weight:600;flex-shrink:0">&#8594;</span>&nbsp;Together they create a complete AI function — one holding infrastructure, one driving growth.</div>
+  </div>
+</div>
+
+<!-- SECTION 2 -->
+<div class="sec">
+  <div class="sec-num">Section 2</div>
+  <div class="sec-title">How this differs from the existing MD, Strategy &amp; Impact role</div>
+  <div class="sec-lead">VIDA's current MD, Strategy &amp; Impact role owns organizational strategy, partnership development, and delivery quality across the full portfolio. The AI-focused MD role is a specialization within that same framework — not a duplication of it. Below is a direct mapping of what this role owns in practice.</div>
+  <div class="sg">
+    <div class="sc">
+      <div class="sc-head"><div class="sc-icon" style="background:#FFF0EF;color:#F15D5E">&#9642;</div><div class="sc-lbl">Direction &amp; delivery</div></div>
+      <div class="si"><span style="color:#F15D5E;font-weight:600">&#10003;</span>&nbsp;Own VIDA's AI strategic framework as a living document the whole team operates from</div>
+      <div class="si"><span style="color:#F15D5E;font-weight:600">&#10003;</span>&nbsp;Serve as the strategic AI advisor on any VIDA engagement involving AI integration, adoption, or governance</div>
+      <div class="si"><span style="color:#F15D5E;font-weight:600">&#10003;</span>&nbsp;Set and maintain the standard for what rigorous, ethical AI engagement looks like at VIDA</div>
+      <div class="snote">Vertical depth in one practice area — not horizontal strategy across all of VIDA.</div>
+    </div>
+    <div class="sc">
+      <div class="sc-head"><div class="sc-icon" style="background:#EAF3DE;color:#27500A">&#9642;</div><div class="sc-lbl">Continued data lead duties</div></div>
+      <div class="si"><span style="color:#3B6D11;font-weight:600">&#10003;</span>&nbsp;Remains data lead on assigned projects — dashboards, data deliverables, program data management</div>
+      <div class="si"><span style="color:#3B6D11;font-weight:600">&#10003;</span>&nbsp;Data governance work done here feeds directly into AI infrastructure development</div>
+      <div class="si"><span style="color:#3B6D11;font-weight:600">&#10003;</span>&nbsp;Improving how we store and structure data unlocks better AI tools for the whole team</div>
+      <div class="snote">The data lead role is preserved — AI strategy is additive, not a replacement.</div>
+    </div>
+    <div class="sc">
+      <div class="sc-head"><div class="sc-icon" style="background:#EDE8F7;color:#603C96">&#9642;</div><div class="sc-lbl">Team AI capacity &amp; culture</div></div>
+      <div class="si"><span style="color:#603C96;font-weight:600">&#10003;</span>&nbsp;Design and facilitate a formal AI fluency pathway for VIDA staff</div>
+      <div class="si"><span style="color:#603C96;font-weight:600">&#10003;</span>&nbsp;Build tools and resources the team can use independently without escalating every decision</div>
+      <div class="si"><span style="color:#603C96;font-weight:600">&#10003;</span>&nbsp;Embed community-centered AI practice as an onboarding touchpoint and team norm</div>
+      <div class="snote">The current MD, S&amp;I leads team development broadly. This role leads AI fluency specifically.</div>
+    </div>
+    <div class="sc">
+      <div class="sc-head"><div class="sc-icon" style="background:#FFF8EC;color:#6B4200">&#9642;</div><div class="sc-lbl">Growth, partnerships &amp; brand</div></div>
+      <div class="si"><span style="color:#854F0B;font-weight:600">&#10003;</span>&nbsp;Lead from the front on AI-specific proposals and pursuit strategy — not in a supporting role</div>
+      <div class="si"><span style="color:#854F0B;font-weight:600">&#10003;</span>&nbsp;Own VIDA's AI-specific partnerships — partner firms, co-design relationships, AI community network</div>
+      <div class="si"><span style="color:#854F0B;font-weight:600">&#10003;</span>&nbsp;Advance VIDA's external AI presence through thought leadership and case studies</div>
+      <div class="snote">The current MD, S&amp;I owns growth broadly. This role owns the AI growth lane specifically.</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 3 -->
+<div class="sec">
+  <div class="sec-num">Section 3</div>
+  <div class="sec-title">How we operationalize this shift</div>
+  <div class="sec-lead">Three parallel workstreams, grounded in goals already established — beginning with a capacity alignment conversation and moving into internal and external AI strategy execution.</div>
+  <div class="steps">
+
+    <div class="sr">
+      <div class="sline"></div>
+      <div class="snum" style="background:#311052;color:#fff">1</div>
+      <div class="sb">
+        <div class="st">Align on capacity with the data team</div>
+        <div class="sd">A structured conversation to map current duties, identify what shifts, and carve out the capacity needed to carry this role without overextending.</div>
+        <div class="scards">
+          <div class="scard">
+            <div class="scard-t">What this conversation covers</div>
+            <div class="scard-b"><div class="bul">
+              <div class="bitem"><div class="bdot"></div>Review current project assignments and data lead responsibilities</div>
+              <div class="bitem"><div class="bdot"></div>Identify which duties can be absorbed, delegated, or phased down</div>
+              <div class="bitem"><div class="bdot"></div>Define protected time for AI strategy work — internal and external</div>
+              <div class="bitem"><div class="bdot"></div>Establish a transition timeline that does not disrupt active engagements</div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sr">
+      <div class="sline"></div>
+      <div class="snum" style="background:#603C96;color:#fff">2</div>
+      <div class="sb">
+        <div class="st">Goal 1 — Data lead (maintained)</div>
+        <div class="sd">Data lead responsibilities on assigned projects — dashboards, data deliverables, and program data management — remain part of the role. Data governance work done here feeds directly into AI governance infrastructure.</div>
+        <div class="gtag g-data">Continuing</div>
+      </div>
+    </div>
+
+    <div class="sr">
+      <div class="sline"></div>
+      <div class="snum" style="background:#603C96;color:#fff">3</div>
+      <div class="sb">
+        <div class="st">Goal 2 — Internal AI strategy</div>
+        <div class="sd">Build the internal infrastructure that makes VIDA's AI practice consistent, accessible, and durable for the whole team.</div>
+        <div class="gtag g-int">Internal</div>
+        <div class="scards">
+          <div class="scard">
+            <div class="scard-t">Build and launch the VIDA AI Hub</div>
+            <div class="scard-b">A centralized internal platform where staff can access approved tools, submit feedback on tools in progress, request new builds, and get answers about AI policy — without digging through documentation. A working prototype has already been built and is ready to be hosted.<br><br>
+              <a class="plink" href="https://dominiquecharlie.github.io/VIDA_Director_Proposal/" target="_blank">View the working prototype &#8599;</a>
+            </div>
+          </div>
+          <div class="scard">
+            <div class="scard-t">Data governance &#8594; AI governance</div>
+            <div class="scard-b">Reorganize how VIDA stores and structures internal data so AI tools can actually be built on top of it. One of the clearest gaps is how past proposals are stored — currently they live in silos that make it difficult to surface, reuse, or build AI-assisted workflows around them. Improved data structure means better tools, built faster, for the whole team.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sr">
+      <div class="snum" style="background:#F15D5E;color:#fff">4</div>
+      <div class="sb">
+        <div class="st">Goal 3 — External AI strategy</div>
+        <div class="sd">Build VIDA's external AI pipeline through a staged approach — starting with free tools that create visibility, then building toward funded engagements and thought leadership.</div>
+        <div class="gtag g-ext">External</div>
+        <div class="scards">
+
+          <div class="scard">
+            <div class="scard-t">Pipeline stage 1 — free reflection tools</div>
+            <div class="scard-b">Create AI readiness and reflection tools that organizations can use at no cost. These build trust, generate visibility, and position VIDA as a credible, accessible entry point into AI strategy for mission-driven organizations.<br><br>
+              <a class="plink" href="https://www.intentionaldata.org/knowyoursoil" target="_blank">Example: Know Your Soil — free reflection tool &#8599;</a>
+            </div>
+          </div>
+
+          <div class="scard">
+            <div class="scard-t">Pipeline stage 2 — case studies</div>
+            <div class="scard-b">Document case studies from internal and external AI activities — the tools we've built, the engagements we've led, and the governance frameworks we've developed. These become the evidence base for future proposals and thought leadership.</div>
+          </div>
+
+          <div class="scard">
+            <div class="scard-t">Pipeline stage 3 — thought leadership</div>
+            <div class="scard-b"><div class="bul">
+              <div class="bitem"><div class="bdot"></div>Continue publishing white papers on AI governance and equity in the social sector</div>
+              <div class="bitem"><div class="bdot"></div>Seek opportunities to co-create with community partners and publish case studies publicly under VIDA's brand</div>
+            </div></div>
+          </div>
+
+          <div class="scard">
+            <div class="scard-t">Pipeline stage 4 — RFP tracking</div>
+            <div class="scard-b">Build an AI pipeline tracking system for open and closed RFPs in the AI integration and capacity-building space.</div>
+          </div>
+
+          <div class="scard opt">
+            <div class="opt-tag">Additional input needed — Larkin &amp; leadership team</div>
+            <div class="scard-t">Pipeline stage 5 — AI cohort for nonprofits</div>
+            <div class="scard-b">Research and pursue opportunities to build or participate in AI learning cohorts designed specifically for nonprofit organizations — similar to models like Bellwether's AI Cohorts. This positions VIDA as a capacity-building partner, not just a consulting firm.</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <div>
+    <div class="fl">Dominique Charlie Oquendo &middot; VIDA Collaborative &middot; 2026</div>
+    <div class="fl-sub">Full proposal and evidence base: dominiquecharlie.github.io/VIDA_Evaluation</div>
+  </div>
+  <div class="fv">V</div>
+</div>
+
+</div>
+</body>
+</html>
